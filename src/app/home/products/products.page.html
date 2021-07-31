@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>My Store</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let product of products" (click)="showDetail(product)">
+    <img src="{{product.imageUrl}}" class="ion-padding">
+    <ion-card-header>
+      <ion-card-title>{{product.name}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+     Price: <span>{{product.price}}</span>
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>

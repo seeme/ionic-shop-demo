@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>My Store</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item class="ion-margin-vertical">
+    <ion-label>User Name</ion-label>
+    <ion-input placeholder="User Name" [(ngModel)]="userName"></ion-input>
+  </ion-item>
+
+  <ion-item class="ion-margin-vertical">
+    <ion-label>Password</ion-label>
+    <ion-input placeholder="Password" 
+	type="password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+
+  <ion-item *ngIf="!validUser" style="color: red;"> 
+    Incorrect password!!!
+  </ion-item>
+
+  <div class="ion-margin-vertical">
+    <ion-button color="warning" expand="block" (click)="onSignin()" >Sign In</ion-button>
+  </div>
+
+</ion-content>

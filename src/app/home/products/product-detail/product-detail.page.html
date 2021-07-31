@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>{{product ? product.name : ''}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="product" class="ion-padding">
+  {{product.description}}
+</ion-content>
+
