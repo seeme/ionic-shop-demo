@@ -20,6 +20,11 @@ export class ProductsPage implements OnInit {
 
   ngOnInit() {
     this.products = this.productService.getProducts();
+    this.productService.getFireProducts().subscribe(
+      message => {
+        let prds = message as Array<Product>;
+        console.log(prds[0]);
+    });
   }
 
   showDetail(selectedProduct: Product) {
