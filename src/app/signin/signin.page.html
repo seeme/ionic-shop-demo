@@ -6,8 +6,8 @@
 
 <ion-content class="ion-padding">
   <ion-item class="ion-margin-vertical">
-    <ion-label>User Name</ion-label>
-    <ion-input placeholder="User Name" [(ngModel)]="userName"></ion-input>
+    <ion-label>Email</ion-label>
+    <ion-input placeholder="Email" [(ngModel)]="email"></ion-input>
   </ion-item>
 
   <ion-item class="ion-margin-vertical">
@@ -21,7 +21,11 @@
   </ion-item>
 
   <div class="ion-margin-vertical">
-    <ion-button color="warning" expand="block" (click)="onSignin()" >Sign In</ion-button>
+    <ion-button color="warning" expand="block" (click)="onSignin()" >Signin</ion-button>
+  </div>
+
+  <div class="ion-margin-vertical">
+    <ion-button color="success" expand="block" (click)="onSignup()" >Signup</ion-button>
   </div>
 
 </ion-content>
